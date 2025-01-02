@@ -6,13 +6,16 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-           - name: welcome message
-             run: echo "Hi Abimel"
+            - name: checkout repo
+              uses: actions/checkout@v4
 
-           - name: list files
-             run: ls
+            - name: welcome message
+              run: echo "Hi Abimel"
 
-           - name: read files
-             run: cat README.md
+            - name: list files
+              run: ls
+
+            - name: read files
+              run: cat README.md
            
 
